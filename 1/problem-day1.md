@@ -1,7 +1,3 @@
-Advent of Code[About][Events][Shop][Settings][Log Out]Sivakumar Ravichandran 2*
-       λy.2022[Calendar][AoC++][Sponsors][Leaderboard][Stats]
-Our sponsors help make Advent of Code possible:
-Assured - Från chip till skepp, bitar till bilar. Vi testar din säkerhet, vi säkrar din kod. Your career Assured.
 --- Day 1: Calorie Counting ---
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
 
