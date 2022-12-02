@@ -1,5 +1,5 @@
 max = 0
-with open("1/data.txt", 'r', encoding = 'utf-8') as f:
+with open("data/1.txt", 'r', encoding = 'utf-8') as f:
     arr = []
     for line in f:
         if line.strip() == "":
