@@ -3,31 +3,21 @@ from functools import reduce
 max_height = lambda l : max(l) if len(l) > 0 else -1
 
 def p1(grid):
-    t_grid = [list(x) for x in zip(*grid)]
-
+    
     visible_trees = 0
 
     for row in range(len(grid)):
-        for col in range(len(t_grid)):
+        for col in range(len(grid[row])):
 
-            h = grid[row]
-            v = t_grid[col]
+            tree = grid[row][col]
 
-            t = grid[row][col]
-
-            left = h[:col]
-            right = h[col+1:]
-
-            top = v[:row]
-            down = v[row+1:]
-
-            l = max_height(left)
-            r = max_height(right)
-            u = max_height(top)
-            d = max_height(down)
+            right = [grid[row][i] for i in range(col+1, len(grid[row]))]
+            left = list(reversed([grid[row][i] for i in range(col)]))
+            top = list(reversed([grid[i][col] for i in range(row)]))
+            down = [grid[i][col] for i in range(row+1, len(grid))]
             
-            s = [l, r, u, d]
-            if t > min(s):
+            s = [max_height(i) for i in [left, right, top, down]]
+            if tree > min(s):
                 visible_trees+=1
 
     print(visible_trees)
